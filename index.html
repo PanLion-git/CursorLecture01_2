@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>FrontEnd Lesson 1</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="header1">Команди Git</h1>
+    <h2 class="header2">(термінал)</h2>
+  </header>
+
+  <hr class="chapter_separator">
+
+  <div class="container">
+
+    <p class="command">git config --global user.name blabla</p>
+    <p class="comment"> - встановлює ім'я користувача, що відображатиметься у інформацї про виконані зміни</p>
+
+    <p class="command">git config --global user.email blabal@bla</p>
+    <p class="comment"> - встановлює email користувача, що відображатиметься у інформацї про виконані зміни</p>
+
+    <p class="command">git config --global core.editor "''"</p>
+    <p class="comment"> - задає редактор для формування повідомлень</p>
+
+    <p class="command">git config --list</p>
+    <p class="comment"> - виводить перелік налаштувань поточного репозиторія</p>
+
+    <p class="command"> git init</p>
+    <p class="comment"> - створення репозиторію поточної директорії (директорія вказується командою cd "path")</p>
+
+    <p class="command">git status</p>
+    <p class="comment"> - виводить перелік індексованих файлів, що були модифіковані</p>
+
+    <p class="command">git add [. | file_name | regexp]</p>
+    <p class="comment"> - додає файли у перелік який буде комітитись</p>
+
+    <p class="command">git commit [-a] -m 'commit_info'</p>
+    <p class="comment"> - комітить зміни, що були включені командою git add</p>
+
+    <p class="command">git log</p>
+    <p class="comment"> - виводить перелік комітів</p>
+
+    <p class="command">git checkout [branch_name]</p>
+    <p class="comment"> - переключається на вказану гілку</p>
+
+    <p class="command">git branch [branch_name]</p>
+    <p class="comment"> - створення нової гілки (без параметра видає перелік всіх гілок)</p>
+
+    <p class="command">git push</p>
+    <p class="comment"> - пеносить зміни з локального репозиторію на віддалений</p>
+
+    <p class="command">git pull</p>
+    <p class="comment"> - переносить зміни з віддаленого репозиторія на локальний</p>
+
+    <p class="command">git merge [branch_name]</p>
+    <p class="comment"> - заливає зміни з поточної гілки на вказану</p>
+
+    <p class="command">git clone</p>
+    <p class="comment"> - копіює віддалений репозиторій на локальний комп'ютер</p>
+
+  </div>
+
+  <hr class="chapter_separator">
+
+  <div class="container">
+    <p class="gitignore">
+      <span class="attention">.gitignore</span> - файл, у якому міститься інформація про файли які не повинні потрапляти
+      у віддалений репозиторій. Цей файл створюється за допомогою відповідної опції при створенні віддаленого
+      репозиторія, або у кориневому каталозі локального репозиторія. Таку назву файлу можна отримати шляхом
+      переіменування файлу з ім'ям <b><i>gitignore.txt</i></b> у командному вікні, що відкивається по команді cmd за
+      допомогою команд
+      <b><i>cd 'path_to_local_repository'</i></b> та <b><i> rename gitignore.txt .gitignore</i></b> . <br>
+      Більш детальну інформацію дивись <a href="https://git-scm.com/docs/gitignore" target="blank">тут</a>.
+    </p>
+  </div>
+
+  <hr class="chapter_separator">
+
+  <div class="container">
+
+    <p class="command"> git revert [some_option]</p>
+    <p class="comment"> - відміняє коміт, <a href="https://git-scm.com/docs/git-revert" target="blank">[some_option]</a>
+    </p>
+
+    <p class="command">git reset</p>
+    <p class="comment"> - відміняє проіндексовані зміни (виключає файли, які підготовані для команди git commit)</p>
+
+    <p class="command">git rebase [branch_name]</p>
+    <p class="comment"> - переносить зміни з поточної гілки на вказану</p>
+
+    <p class="command">git cherry-pick [ID-commit]</p>
+    <p class="comment"> - пеносить вказаний коміт на поточну гілку</p>
+
+    <p class="command">git stash</p>
+    <p class="comment"> - приховує зроблені зміни. Відміна останнього приховування командою git stash apply. Відміна
+      заданого приховування виконується по команді git stash apply stash@{2}. Переглянути всі приховування можна по
+      команді git stash list</p>
+
+  </div>
+
+  <hr class="chapter_separator">
+ 
+</body>
+
+</html>

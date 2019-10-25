@@ -1,0 +1,73 @@
+body {
+  width: 90%;
+  /* border: 1px solid red;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: rgb(216, 203, 203);
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 8px 0 8px 0;
+}
+
+.header1 {
+  font-size: xx-large;
+  /* text-align: center; */
+}
+
+.header2 {
+  font-size: x-large;
+
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+.command {
+  font-weight: bold;
+}
+
+p:nth-child(2n)
+{
+  background-color: rgb(229, 218, 229);
+}
+
+.comment {
+  font-style: italic;
+  padding-left: 50px;
+  text-align: justify;
+  margin-bottom: 16px;
+}
+
+.comment:hover {
+  font-size: x-large;
+}
+
+.chapter_separator {
+  border: none; /* Убираем границу для браузера Firefox */
+  background-color: silver; /* Цвет линии для браузера Firefox и Opera */
+  height: 7px; /* Толщина линии */
+  width: 75%;
+  /* margin: 16px 0; */
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+
+.gitignore {
+  text-align: justify;
+}
+
+.attention {
+  font-weight: bold;
+}
